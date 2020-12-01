@@ -1,4 +1,6 @@
-var pdf = new PDFAnnotate('pdf-container', 'pdf.pdf', {
+import PDFAnnotate from './pdfannotate.js';
+
+var pdf = new PDFAnnotate('pdf-container', 'https://github.com/RavishaHesh/PDFJsAnnotations/raw/master/pdf.pdf', {
     onPageUpdated(page, oldData, newData) {
         console.log(page, oldData, newData);
     },
@@ -87,3 +89,4 @@ $(function () {
         pdf.setFontSize(font_size);
     });
 });
+
