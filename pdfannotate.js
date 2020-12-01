@@ -242,3 +242,6 @@ PDFAnnotate.prototype.loadFromJSON = function(jsonData) {
 		}
 	})
 }
+
+
+export default PDFAnnotate;
